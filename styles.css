@@ -52,7 +52,7 @@ a:hover {
   color: grey;
   text-decoration: underline;
   text-underline-offset: 0.7rem;
-  text-decoration-color: rgb(181, 181, 181);
+  text-decoration-color: rgba(237,99,55,255);
 }
 
 /* hambruger-menu */
@@ -143,8 +143,8 @@ section {
 }
 .section__pic-container {
   display: flex;
-  height: 400px;
-  width: 400px;
+  height: 600px;
+  width: 600px;
   margin: auto 0;
 }
 .section__text {
@@ -178,6 +178,9 @@ section {
   cursor: pointer;
   height: 2rem;
 }
+.icon:hover{
+  transform: scale(1.1);
+}
 
 /* button */
 .btn-container{
@@ -196,6 +199,7 @@ section {
     border: rgb(53, 53, 53) 0.1rem solid;
 }
 .btn-color-1:hover, .btn-color-2:hover{
+    border: white 0.1rem solid;
     cursor: pointer;
 }
 .btn-color-1, .btn-color-2:hover{
@@ -203,13 +207,15 @@ section {
     color: white;
 }
 .btn-color-1:hover{
-    background: rgb(0,0,0);
+    /* background: rgb(0,0,0); */
+    background: rgba(237,99,55,255)
 }
 .btn-color-2{
     background: none;
 }
 .btn-color-2:hover{
     border: rgb(255, 255, 255) 0.1rem solid;
+    background: rgba(237,99,55,255);
 }
 
 /* about section */
@@ -289,6 +295,29 @@ article{
   justify-content: space-around;
   gap:0.5rem;
 }
-aritcle .icon{
+article .icon{
   cursor:default
+}
+
+/* projects */
+
+#projects{
+  position: relative;
+}
+.color-container{
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+.project-img{
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+.project-title {
+  margin:1rem;
+  color: black;
+}
+.project-btn{
+  color: black;
+  border-color: rgb(163, 163, 163);
 }
